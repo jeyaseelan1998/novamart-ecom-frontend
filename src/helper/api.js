@@ -23,7 +23,7 @@ api.interceptors.response.use(response => {
 }, (error) => {
     if (get(error, "response.status", false) === 401) {
         if(get(error, "config.url") !== "/profile"){
-            window.location.href = import.meta.env.PUBLIC_URL || "/sign-in?redirect=" + window.location.pathname;
+            window.location.href = import.meta.env.PUBLIC_URL || "/login?redirect=" + window.location.pathname;
         }
     }
     return Promise.reject(error);

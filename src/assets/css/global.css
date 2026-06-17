@@ -1,0 +1,42 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --white20: rgba(255, 255, 255, 20%);
+  --white50: rgba(255, 255, 255, 50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: middle;
+  font-family: 'Satoshi';
+}
+
+button,
+a {
+  cursor: pointer;
+  transition: all .4s;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  color: inherit;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.absolute-center,
+.fixed-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
