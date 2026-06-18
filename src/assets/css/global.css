@@ -3,6 +3,8 @@
   --black: #000;
   --white20: rgba(255, 255, 255, 20%);
   --white50: rgba(255, 255, 255, 50%);
+
+  --product-bg: #F0EEED;
 }
 
 * {

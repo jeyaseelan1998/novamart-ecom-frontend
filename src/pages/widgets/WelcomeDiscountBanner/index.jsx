@@ -29,7 +29,7 @@ export default function WelcomeDiscountBanner() {
                         <p>Sign up and get 20% off to your first order. <a href="/sign-up">Sign Up Now</a></p>
                     </div>
                     <button onClick={onClick}>
-                        <i class="fa-solid fa-xmark"></i>
+                        <i className="fa-solid fa-xmark"></i>
                     </button>
                 </div>
             </Center>

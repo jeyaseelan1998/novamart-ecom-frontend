@@ -1,0 +1,81 @@
+.bsz, 
+.bgImage, 
+.bsz img, 
+.spinner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.bgImage {
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    transition: opacity 0.4s 0.2s;
+}
+.bgImage.loading,
+.bsz img {
+    opacity: 0;
+}
+.normalImage img {
+    opacity: 1;
+}
+.fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 32px;
+    transform: translate(-50%, -50%);
+}
+.sizer {
+    padding-top: 50%;
+}
+.captionWrap {
+    display: inline-block;
+    position: absolute;
+    opacity: .7;
+    max-width: fit-content;
+    width: 100%;
+    z-index: 1;
+}
+.caption {
+    padding: 4px 8px;
+    background-color: var(--primaryAsset);
+    color: var(--buttonPrimaryText);
+    font-size: 11px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    max-width: 180px;
+}
+.topLeft {
+    top: 0;
+    left: 0;
+}
+.topLeft p {
+    border-bottom-right-radius: 2px;
+}
+.topRight {
+    top: 0;
+    right: 0;
+}
+.topRight p {
+    border-bottom-left-radius: 2px;
+}
+.bottomLeft {
+    bottom: 0;
+    left: 0;
+}
+.bottomLeft p {
+    border-top-right-radius: 2px;
+}
+.bottomRight {
+    bottom: 0;
+    right: 0;
+}
+.bottomRight p {
+    border-top-left-radius: 2px;
+}

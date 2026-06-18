@@ -18,12 +18,20 @@ export default function ExceptionHandler({ children }) {
         api.post('/error/create', errorData);
     };
 
+    if (!import.meta.env.PROD) {
+        return (
+            <>
+                {children}
+            </>
+        )
+    }
+
     return (
         <ErrorBoundary
             FallbackComponent={({ resetErrorBoundary }) => (
                 <>
-                Oops...
-                <a onClick={resetErrorBoundary} href='/'>Home</a>
+                    Oops...
+                    <a onClick={resetErrorBoundary} href='/'>Home</a>
                 </>
             )}
             onError={handleError}
