@@ -1,0 +1,38 @@
+.productsList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.productsItem {
+    width: 25%;
+    padding: 10px;
+}
+
+@media (max-width: 1024px) {
+    .productsItem {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .productsList {
+        margin: -8px;
+    }
+    
+    .productsItem {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .productsItem {
+        width: 50%;
+    }
+}
+
+@media (max-width: 389px) {
+    .productsItem {
+        width: 100%;
+    }
+}

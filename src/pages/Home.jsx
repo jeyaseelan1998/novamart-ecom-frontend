@@ -1,11 +1,12 @@
-import ProductCard from './widgets/shared/ProductCard'
+import { sampleProductList } from '../helper/constants'
+import ProductsGrid from './widgets/ProductsGrid'
 import WelcomeDiscountBanner from './widgets/WelcomeDiscountBanner'
 
 export default function Home() {
     return (
         <div>
             <WelcomeDiscountBanner />
-            <ProductCard />
+            <ProductsGrid list={sampleProductList} title="NEW ARRIVALS" />
         </div>
     )
 }

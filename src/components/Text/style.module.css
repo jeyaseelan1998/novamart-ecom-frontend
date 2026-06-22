@@ -6,12 +6,33 @@
     font-weight: bold;
 }
 
+.regular {
+    font-weight: 400;
+}
+
+.center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.secondaryFont {
+    font-family: var(--secondary-font);
+}
+
 .opacity40 {
     opacity: 40%;
 }
 
 .strikethrough {
     text-decoration: line-through;
+}
+
+.fs48 {
+    font-size: 48px;
+    line-height: 1.2;
 }
 
 .fs24 {
@@ -24,6 +45,11 @@
     line-height: 1.2;
 }
 
+.fs16 {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
 .fs14 {
     font-size: 14px;
     line-height: 1.2;
@@ -32,4 +58,82 @@
 .fs12 {
     font-size: 12px;
     line-height: 1.2;
+}
+
+@media (max-width: 1280px) {
+    .fs48 {
+        font-size: 46px;
+    }
+
+    .fs24 {
+        font-size: 23px;
+    }
+
+    .fs20 {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .fs48 {
+        font-size: 44px;
+    }
+
+    .fs24 {
+        font-size: 22px;
+    }
+
+    .fs20 {
+        font-size: 18px;
+    }
+
+    .fs16 {
+        font-size: 15px;
+    }
+
+    .fs14 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fs48 {
+        font-size: 40px;
+    }
+
+    .fs24 {
+        font-size: 21px;
+    }
+
+    .fs20 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 576px) {
+    .fs48 {
+        font-size: 36px;
+    }
+
+    .fs24 {
+        font-size: 20px;
+    }
+
+    .fs20 {
+        font-size: 16px;
+    }
+
+    .fs16 {
+        font-size: 14px;
+    }
+
+    .fs14 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 390px) {
+    .fs48 {
+        font-size: 32px;
+    }
 }

@@ -4,7 +4,7 @@ import style from "./style.module.css";
 export default function Discount({ prefix = '-', discount }) {
     return (
         <div className={style.discount}>
-            <Text className={`fs12 ${style.text}`}>{prefix}{discount}%</Text>
+            <Text className={style.text} fs={12}>{prefix}{discount}%</Text>
         </div>
     )
 }

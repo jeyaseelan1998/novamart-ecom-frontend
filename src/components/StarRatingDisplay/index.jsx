@@ -1,3 +1,4 @@
+import { formatNumber } from '../../helper/currency';
 import Text from '../Text';
 import styles from './style.module.css';
 
@@ -83,7 +84,7 @@ const StarRatingDisplay = ({
                 showRating && (
                     <div>
                         <Text className="fs14">
-                            <span>{rating}</span> <span>/</span> <span className={styles.maxRating}>{maxRating}</span>
+                            <span>{formatNumber({ number: rating, decimals: 1 })}</span> <span>/</span> <span className={styles.maxRating}>{maxRating}</span>
                         </Text>
                     </div>
                 )

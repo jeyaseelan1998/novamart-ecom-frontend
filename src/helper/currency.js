@@ -6,4 +6,6 @@ const symbols = {
 
 export const getCurrencySymbol = (code = "USD") => get(symbols, code, code);
 
-export const formatCurrent = ({ price = 0, code = 'USD' }) => getCurrencySymbol(code) + price.toFixed(2);
+export const formatNumber = ({ number = 0, decimals = 0 }) => number.toFixed(decimals);
+
+export const formatCurrent = ({ price = 0, code = 'USD', decimals = 0 }) => getCurrencySymbol(code) + formatNumber({ number: price, decimals });

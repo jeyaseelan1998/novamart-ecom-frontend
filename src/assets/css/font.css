@@ -67,3 +67,10 @@
     font-weight: 900;
     font-style: italic;
 }
+
+@font-face {
+    font-family: 'Integral CF';
+    src: url('../fonts/integralcf/integralcf-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}

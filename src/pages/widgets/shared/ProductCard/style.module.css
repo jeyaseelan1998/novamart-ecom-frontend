@@ -4,7 +4,6 @@
 
 .imageWrapper {
     position: relative;
-    max-width: 295px;
     background-color: var(--product-bg);
     border-radius: 20px;
     overflow: hidden;

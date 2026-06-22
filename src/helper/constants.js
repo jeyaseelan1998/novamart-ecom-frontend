@@ -15,3 +15,34 @@ export const sampleImage = {
     "updatedAt": "2026-06-20T05:30:02.322Z",
     "__v": 0
 };
+
+export const sampleProductList = [
+    {
+        image: sampleImage,
+        title: "T-SHIRT WITH TAPE DETAILS",
+        rating: 4.3,
+        discount: 10,
+        price: 120
+    },
+    {
+        image: sampleImage,
+        title: "T-SHIRT WITH TAPE DETAILS",
+        rating: 4.3,
+        discount: 10,
+        price: 120
+    },
+    {
+        image: sampleImage,
+        title: "T-SHIRT WITH TAPE DETAILS",
+        rating: 4.3,
+        discount: 10,
+        price: 120
+    },
+    {
+        image: sampleImage,
+        title: "T-SHIRT WITH TAPE DETAILS",
+        rating: 4.3,
+        discount: 10,
+        price: 120
+    },
+]
