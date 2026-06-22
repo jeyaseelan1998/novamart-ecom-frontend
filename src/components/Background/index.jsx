@@ -147,7 +147,7 @@ const LazyImage = ({
 
                 {loaded === 0 && (
                     <div className={style.spinner}>
-                        <Spinner color="var(--black)" size={spinnerSize} />
+                        <Spinner size={spinnerSize} />
                     </div>
                 )}
 
