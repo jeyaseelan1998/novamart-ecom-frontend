@@ -1,0 +1,15 @@
+.discount {
+    background-color: var(--red10);
+    min-width: 58px;
+    min-height: 28px;
+    padding: 6px 12px;
+    border-radius: 60px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    color: var(--red);
+}

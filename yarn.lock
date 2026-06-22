@@ -1201,6 +1201,11 @@ react-error-boundary@^6.1.2:
   resolved "https://registry.npmjs.org/react-error-boundary/-/react-error-boundary-6.1.2.tgz"
   integrity sha512-3DpCr5HVdZ0caUjYE/kIHBEJN0mNP3ZCgf16c48uJ5TbWjorKVp+YG8W3XqlJ7vJAVNw6wNIImyPXmFydwmyng==
 
+react-flexible-star-rating@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/react-flexible-star-rating/-/react-flexible-star-rating-1.0.7.tgz#fb94e4810eea07f7e67df35e8a4ec08dc40b3512"
+  integrity sha512-9oZkbeXjQfI18h4irX3gyT0RhKCtn6dljydY2dVX7MSlg/8HSYHeBURDkBR4nvX20je5f1jQUXxVdts3fA2LHw==
+
 react-loader-spinner@^8.0.2:
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/react-loader-spinner/-/react-loader-spinner-8.0.2.tgz#3c74f8db4ff59adc496a043767e1a82dfe0c1ac1"

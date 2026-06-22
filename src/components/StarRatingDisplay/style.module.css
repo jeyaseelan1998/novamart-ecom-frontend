@@ -1,0 +1,33 @@
+
+.ratingWrapper,
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.ratingWrapper {
+    gap: 4px;
+}
+
+.star {
+    position: relative;
+    display: grid;
+}
+
+.starSvg {
+    width: 100%;
+    height: 100%;
+}
+
+.fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+}
+
+.maxRating {
+    opacity: 60%;
+}

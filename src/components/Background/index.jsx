@@ -56,7 +56,8 @@ const LazyImage = ({
     showCaption,
     caption,
     width = 0,
-    height = 0
+    height = 0,
+    spinnerSize = 24
 }) => {
     const [loaded, setLoaded] = useState(0);
     const [dimension, setDimension] = useState([width, height]);
@@ -83,7 +84,7 @@ const LazyImage = ({
 
         img.onload = () => {
             setLoaded(1);
-            
+
             setDimension([width || img.width, height || img.height]);
 
             if (typeof isLoad === "function") {
@@ -119,8 +120,8 @@ const LazyImage = ({
                     className={style.sizer}
                     style={{
                         paddingTop: `${dimension[0] && dimension[1]
-                                ? (dimension[1] * 100) / dimension[0]
-                                : defaultSize
+                            ? (dimension[1] * 100) / dimension[0]
+                            : defaultSize
                             }%`,
                     }}
                 />
@@ -137,18 +138,18 @@ const LazyImage = ({
                 >
                     {loaded === 1 && <img src={src} alt={alt} />}
 
-                    {loaded === 0 && (
-                        <div className={style.spinner}>
-                            <Spinner />
-                        </div>
-                    )}
-
                     {loaded === 2 && (
                         <div className={style.fa}>
-                            <i className="fa-regular fa-image-slash" />
+                            <i class="fa-solid fa-file-circle-exclamation fa-fade"></i>
                         </div>
                     )}
                 </div>
+
+                {loaded === 0 && (
+                    <div className={style.spinner}>
+                        <Spinner color="var(--black)" size={spinnerSize} />
+                    </div>
+                )}
 
                 {showCaption && caption && loaded === 1 && (
                     <div
@@ -169,6 +170,12 @@ const getLazy = (lazyProp) => {
     return query.get("lazy") === "false" ? false : lazyProp;
 };
 
+// eslint-disable-next-line no-unused-vars
+const getUrl = ({ url, s3Key }) => {
+    if (url) return url;
+    return `${import.meta.env.VITE_CDN_URL}/${s3Key}`;
+}
+
 const Background = ({
     url,
     className = "",
@@ -183,11 +190,14 @@ const Background = ({
     showCaption = false,
     caption = "",
     width,
-    height
+    height,
+    s3Key,
 }) => {
     const lazy = getLazy(lazyProp);
 
-    if (!url) {
+    const srcUrl = encodeURI(getUrl({ url, s3Key }));
+
+    if (!srcUrl) {
         return fallback ? (
             <BrokenImage sizer={retainAspectRatio} />
         ) : null;
@@ -196,7 +206,7 @@ const Background = ({
     if (!lazy && !retainAspectRatio) {
         return (
             <NormalImage
-                src={url}
+                src={srcUrl}
                 className={className}
                 alt={altText}
                 cPosition={cPosition}
@@ -208,7 +218,7 @@ const Background = ({
 
     return (
         <LazyImage
-            src={url}
+            src={srcUrl}
             className={className}
             alt={altText}
             sizer={retainAspectRatio}

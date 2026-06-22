@@ -9,3 +9,10 @@
     border-radius: 20px;
     overflow: hidden;
 }
+
+.priceInfo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}

@@ -3,8 +3,12 @@
   --black: #000;
   --white20: rgba(255, 255, 255, 20%);
   --white50: rgba(255, 255, 255, 50%);
-
   --product-bg: #F0EEED;
+  --red: #FF3333;
+  --red10: rgba(255, 51, 51, 0.1);
+
+  --primary-font: "Satoshi", "San Serif";
+  --secondary-font: "Integral CF", "San Serif";
 }
 
 * {
@@ -12,7 +16,7 @@
   padding: 0;
   box-sizing: border-box;
   vertical-align: middle;
-  font-family: 'Satoshi';
+  font-family: var(--primary-font);
 }
 
 button,
