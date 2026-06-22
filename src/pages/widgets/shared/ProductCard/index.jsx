@@ -14,7 +14,7 @@ export default function ProductCard(props) {
             {
                 image && (
                     <div className={style.imageWrapper}>
-                        <Background retainAspectRatio lazy={false} {...image} />
+                        <Background retainAspectRatio {...image} />
                     </div>
                 )
             }

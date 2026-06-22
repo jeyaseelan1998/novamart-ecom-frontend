@@ -1,0 +1,27 @@
+.disabled {
+    opacity: 0.75;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.outlined {
+    padding: 16px;
+    min-width: 218px;
+    border-radius: 52px;
+    border: 1px solid var(--black10);
+}
+
+.outlined:hover {
+    background-color: var(--black10);
+}
+
+@media (max-width: 768px) {
+    .outlined {
+        width: 100%;
+    }
+}

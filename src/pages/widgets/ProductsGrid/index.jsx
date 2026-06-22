@@ -4,6 +4,7 @@ import Text from "../../../components/Text";
 import ProductCard from "../shared/ProductCard";
 import Spacer from "../../../components/Spacer";
 import Center from "../../../components/Center";
+import Button from "../../../components/Button";
 
 import style from "./style.module.css";
 
@@ -32,6 +33,8 @@ export default function ProductsGrid({ list, title }) {
                     </ul>
                 </>
             )}
+            <Spacer size={55} />
+            <Button label="View All"  color="outlined"/>
         </Center>
     )
 }
