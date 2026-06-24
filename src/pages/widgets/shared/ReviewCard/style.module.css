@@ -2,10 +2,17 @@
     padding: 28px 32px;
     border-radius: 20px;
     border: 1px solid var(--black10);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .nameWrap {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.createdAt {
+    margin-top: auto;
 }

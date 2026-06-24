@@ -2,6 +2,10 @@
     padding-top: 55px;
 }
 
+.size40 {
+    padding-top: 40px;
+}
+
 .size16 {
     padding-top: 16px;
 }
@@ -15,11 +19,19 @@
     .size55 {
         padding-top: 50px;
     }
+
+    .size40 {
+        padding-top: 36px;
+    }
 }
 
 @media (max-width: 1024px) {
     .size55 {
         padding-top: 45px;
+    }
+
+    .size40 {
+        padding-top: 33px;
     }
 }
 
@@ -27,16 +39,28 @@
     .size55 {
         padding-top: 40px;
     }
+
+    .size40 {
+        padding-top: 30px;
+    }
 }
 
 @media (max-width: 576px) {
     .size55 {
         padding-top: 35px;
     }
+
+    .size40 {
+        padding-top: 27px;
+    }
 }
 
 @media (max-width: 390px) {
     .size55 {
         padding-top: 32px;
+    }
+
+    .size40 {
+        padding-top: 24px;
     }
 }

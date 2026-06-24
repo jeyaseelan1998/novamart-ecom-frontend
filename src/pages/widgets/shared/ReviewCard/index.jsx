@@ -1,9 +1,9 @@
-import { formatDate } from '../../../helper/date';
+import { formatDate } from '../../../../helper/date';
 
-import Text from '../../../components/Text';
-import Spacer from '../../../components/Spacer';
-import VerifiedBatch from '../shared/VerifiedBatch';
-import StarRatingDisplay from '../../../components/StarRatingDisplay';
+import Text from '../../../../components/Text';
+import Spacer from '../../../../components/Spacer';
+import VerifiedBatch from '../VerifiedBatch';
+import StarRatingDisplay from '../../../../components/StarRatingDisplay';
 
 import style from './style.module.css';
 
@@ -36,10 +36,10 @@ export default function ReviewCard({ rating, name, verified, review, createdAt }
             }
             {
                 createdAt && (
-                    <>
+                    <div className={style.createdAt}>
                         <Spacer />
                         <Text className="fs16 fw500 black60">Posted on {formatDate(createdAt)}</Text>
-                    </>
+                    </div>
                 )
             }
         </div>

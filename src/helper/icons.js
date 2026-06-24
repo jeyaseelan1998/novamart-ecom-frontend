@@ -5,6 +5,8 @@ export const ICONS = {
     circleExclamation: "fa-solid fa-file-circle-exclamation fa-fade",
     circleCheck: "fa-solid fa-circle-check",
     xMark: "fa-solid fa-xmark",
+    arrowLeft: "fa-solid fa-arrow-left",
+    arrowRight: "fa-solid fa-arrow-right",
 }
 
 export const getIcon = (icon) => {

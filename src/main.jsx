@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx';
 import ExceptionHandler from "./ExceptionHandler";
 
+import 'swiper/css';
 import './assets/css/global.css';
 import './assets/css/font.css';
 

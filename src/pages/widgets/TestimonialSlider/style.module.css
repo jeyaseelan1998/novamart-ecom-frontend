@@ -1,0 +1,32 @@
+.navLinks,
+.titleWrap {
+    display: flex;
+    align-items: center;
+}
+
+.navLinks {
+    margin-left: auto;
+    margin-top: auto;
+    gap: 8px;
+}
+
+.navLeft,
+.navRight {
+    font-size: 18px;
+    padding: 4px 6px;
+    border-radius: 2px;
+}
+
+.navLeft:hover,
+.navRight:hover {
+    background-color: var(--black10);
+}
+
+.disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.swiperSlide {
+    height: auto;
+}
