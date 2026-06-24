@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { getIcon, ICONS } from "../../../helper/icons";
+import { getIcon } from "../../../helper/icons";
 import Center from "../../../components/Center";
 
 import style from "./style.module.css";
@@ -30,7 +30,7 @@ export default function WelcomeDiscountBanner() {
                         <p>Sign up and get 20% off to your first order. <a href="/sign-up">Sign Up Now</a></p>
                     </div>
                     <button onClick={onClick}>
-                        <i className={getIcon(ICONS.xMark)}></i>
+                        <i className={getIcon('xMark')}></i>
                     </button>
                 </div>
             </Center>

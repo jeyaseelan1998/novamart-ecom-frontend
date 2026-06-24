@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-import { getIcon, ICONS } from "../../helper/icons";
+import { getIcon } from "../../helper/icons";
 import Spinner from "../Spinner";
 
 import style from "./style.module.css";
@@ -11,7 +11,7 @@ const BrokenImage = ({ className, sizer }) => (
         <div className={style.bsz}>
             <div className={`${style.bgImage} ${className || ""}`}>
                 <div className={style.fa}>
-                    <i className={getIcon(ICONS.imageSlash)} />
+                    <i className={getIcon('imageSlash')} />
                 </div>
             </div>
         </div>
@@ -141,7 +141,7 @@ const LazyImage = ({
 
                     {loaded === 2 && (
                         <div className={style.fa}>
-                            <i class={getIcon(ICONS.circleExclamation)}></i>
+                            <i class={getIcon('circleExclamation')}></i>
                         </div>
                     )}
                 </div>
