@@ -30,6 +30,10 @@
     opacity: 40%;
 }
 
+.black60 {
+    color: var(--black60);
+}
+
 .strikethrough {
     text-decoration: line-through;
 }

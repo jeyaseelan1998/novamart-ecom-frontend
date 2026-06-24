@@ -30,7 +30,7 @@ export default function ReviewCard({ rating, name, verified, review, createdAt }
                 review && (
                     <>
                         <Spacer />
-                        <Text tag='q' className='fs16'>{review}</Text>
+                        <Text tag='q' className='fs16 black60'>{review}</Text>
                     </>
                 )
             }
@@ -38,7 +38,7 @@ export default function ReviewCard({ rating, name, verified, review, createdAt }
                 createdAt && (
                     <>
                         <Spacer />
-                        <Text className="fs16 medium">Posted on {formatDate(createdAt)}</Text>
+                        <Text className="fs16 fw500 black60">Posted on {formatDate(createdAt)}</Text>
                     </>
                 )
             }

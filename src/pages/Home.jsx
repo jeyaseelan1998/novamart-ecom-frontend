@@ -8,7 +8,13 @@ export default function Home() {
         <div>
             <WelcomeDiscountBanner />
             <ProductsGrid list={sampleProductList} title="NEW ARRIVALS" ctaLabel="View All" />
-            <ReviewCard />
+            <ReviewCard
+                name='Sarah M.'
+                verified={true}
+                rating={3}
+                review='Good product'
+                createdAt="2026-06-24T10:06:04.219Z"
+            />
         </div>
     )
 }
