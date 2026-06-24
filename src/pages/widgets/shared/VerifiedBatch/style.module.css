@@ -1,0 +1,11 @@
+.check {
+    font-size: 20px;
+    color: var(--green);
+}
+
+
+@media (max-width: 576px) {
+    .check {
+        font-size: 15px;
+    }
+}

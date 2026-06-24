@@ -1,7 +1,7 @@
 {
   "name": "novamart-ecom-frontend",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,6 +13,7 @@
     "axios": "^1.18.0",
     "device-detector-js": "^3.0.3",
     "lodash": "^4.18.1",
+    "moment": "^2.30.1",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-error-boundary": "^6.1.2",
@@ -30,5 +31,8 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.6.0",
     "vite": "^8.0.12"
+  },
+  "engines": {
+    "node": "v24.5.0"
   }
 }

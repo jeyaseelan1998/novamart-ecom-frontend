@@ -1,0 +1,11 @@
+.reviewCard {
+    padding: 28px 32px;
+    border-radius: 20px;
+    border: 1px solid var(--black10);
+}
+
+.nameWrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

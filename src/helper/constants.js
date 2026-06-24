@@ -28,13 +28,12 @@ export const sampleProductList = [
         image: sampleImage,
         title: "T-SHIRT WITH TAPE DETAILS",
         rating: 4.3,
-        discount: 10,
         price: 120
     },
     {
         image: sampleImage,
         title: "T-SHIRT WITH TAPE DETAILS",
-        rating: 4.3,
+        rating: 3.6,
         discount: 10,
         price: 120
     },

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+
+import { getIcon, ICONS } from "../../../helper/icons";
 import Center from "../../../components/Center";
-import Section from "../../../components/Section";
 
 import style from "./style.module.css";
 
@@ -22,17 +23,17 @@ export default function WelcomeDiscountBanner() {
 
     if (!show) return null;
     return (
-        <Section className={style.welcomeDiscountBanner}>
+        <section className={style.welcomeDiscountBanner}>
             <Center>
                 <div className={style.content}>
                     <div className={style.text}>
                         <p>Sign up and get 20% off to your first order. <a href="/sign-up">Sign Up Now</a></p>
                     </div>
                     <button onClick={onClick}>
-                        <i className="fa-solid fa-xmark"></i>
+                        <i className={getIcon(ICONS.xMark)}></i>
                     </button>
                 </div>
             </Center>
-        </Section>
+        </section>
     )
 }

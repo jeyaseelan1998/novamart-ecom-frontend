@@ -1,7 +1,9 @@
+import { getIcon } from "../../helper/icons";
 import Background from "../Background";
 import Spinner from "../Spinner";
 import Text from "../Text";
 import Link from "./Link";
+
 import style from "./style.module.css";
 
 export default function Button({ label, icon, img, disabled, fetching, type = 'button', target = '_self', color = 'primary' }) {
@@ -32,7 +34,7 @@ export default function Button({ label, icon, img, disabled, fetching, type = 'b
                 label && <Text className="fw500" fs={16}>{label}</Text>
             }
             {
-                icon && <i className={icon}></i>
+                icon && <i className={getIcon(icon)}></i>
             }
             {
                 img && <Background retainAspectRatio={false} lazy={false} {...img} />

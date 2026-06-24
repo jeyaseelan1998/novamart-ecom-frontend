@@ -1,12 +1,13 @@
 :root {
-  --white: #fff;
   --black: #000;
+  --black10: rgba(0, 0, 0, 0.1);
+  --white: #fff;
   --white20: rgba(255, 255, 255, 20%);
   --white50: rgba(255, 255, 255, 50%);
-  --product-bg: #F0EEED;
-  --red: #FF3333;
   --red10: rgba(255, 51, 51, 0.1);
-  --black10: rgba(0, 0, 0, 0.1);
+  --red: #FF3333;
+  --green: #01AB31;
+  --product-bg: #F0EEED;
 
   --primary-font: "Satoshi", "San Serif";
   --secondary-font: "Integral CF", "San Serif";

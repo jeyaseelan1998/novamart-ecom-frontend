@@ -1,5 +1,6 @@
 import { formatNumber } from '../../helper/currency';
 import Text from '../Text';
+
 import styles from './style.module.css';
 
 export const PreciseStar = ({
@@ -48,7 +49,7 @@ export const PreciseStar = ({
 };
 
 const StarRatingDisplay = ({
-    rating = 4.5,
+    rating = 0,
     maxRating = 5,
     size = 32,
     activeColor = '#FFC633',
