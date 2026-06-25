@@ -7,6 +7,7 @@ export const ICONS = {
     xMark: "fa-solid fa-xmark",
     arrowLeft: "fa-solid fa-arrow-left",
     arrowRight: "fa-solid fa-arrow-right",
+    envelope: "fa-regular fa-envelope",
 }
 
 export const getIcon = (icon) => {

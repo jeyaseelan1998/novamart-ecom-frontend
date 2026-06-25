@@ -1,0 +1,19 @@
+.newsletter {
+    background-color: var(--black);
+    border-radius: 20px;
+    padding: 36px 64px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.title {
+    color: var(--white);
+    max-width: 550px;
+}
+
+.form {
+    flex: 1;
+    max-width: 350px;
+    ;
+}

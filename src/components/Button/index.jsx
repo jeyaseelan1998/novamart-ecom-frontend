@@ -14,6 +14,9 @@ export default function Button({ label, icon, img, disabled, fetching, type = 'b
         if (color === 'outlined') {
             css += ' ' + style.outlined;
         }
+        if (color === 'white') {
+            css += ' ' + style.white;
+        }
 
         return css;
     }
@@ -29,7 +32,7 @@ export default function Button({ label, icon, img, disabled, fetching, type = 'b
     }
 
     return (
-        <Tag className={getClassName() + ' ' + style.disabled} type={type} target={target}>
+        <Tag className={getClassName() + (disabled ? ' ' + style.disabled : '')} type={type} target={target}>
             {
                 label && <Text className="fw500" fs={16}>{label}</Text>
             }

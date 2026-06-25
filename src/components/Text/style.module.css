@@ -1,5 +1,5 @@
 .text {
-    color: var(--black);
+    position: relative;
 }
 
 .fw500 {
@@ -43,6 +43,11 @@
     line-height: 1.2;
 }
 
+.fs40 {
+    font-size: 40px;
+    line-height: 1.175;
+}
+
 .fs24 {
     font-size: 24px;
     line-height: 1.2;
@@ -55,17 +60,17 @@
 
 .fs16 {
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.25;
 }
 
 .fs14 {
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.25;
 }
 
 .fs12 {
     font-size: 12px;
-    line-height: 1.2;
+    line-height: 1.25;
 }
 
 @media (max-width: 1280px) {
