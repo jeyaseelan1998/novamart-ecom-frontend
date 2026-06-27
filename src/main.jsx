@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { ToastContainer } from "react-toastify";
 
 import App from './App.jsx';
 import ExceptionHandler from "./ExceptionHandler";
@@ -13,5 +14,6 @@ createRoot(document.getElementById('root')).render(
     <ExceptionHandler>
       <App />
     </ExceptionHandler>
+    <ToastContainer />
   </StrictMode>,
 )

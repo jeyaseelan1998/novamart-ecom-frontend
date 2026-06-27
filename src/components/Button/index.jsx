@@ -25,7 +25,7 @@ export default function Button({ label, icon, img, disabled, fetching, type = 'b
 
     if (fetching) {
         return (
-            <div className={getClassName()}>
+            <div className={getClassName() + ' ' + style.loading}>
                 <Spinner size={16} />
             </div>
         )

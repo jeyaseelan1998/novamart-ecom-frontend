@@ -35,6 +35,10 @@
     color: var(--white);
 }
 
+.white.loading {
+    padding: 14px 16px;
+}
+
 @media (max-width: 768px) {
     .outlined {
         width: 100%;
