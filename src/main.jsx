@@ -1,7 +1,9 @@
 import { StrictMode } from 'react'
+import { Provider } from 'react-redux';
 import { createRoot } from 'react-dom/client'
 import { ToastContainer } from "react-toastify";
 
+import { store } from './store';
 import App from './App.jsx';
 import ExceptionHandler from "./ExceptionHandler";
 
@@ -12,7 +14,9 @@ import './assets/css/font.css';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ExceptionHandler>
-      <App />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </ExceptionHandler>
     <ToastContainer />
   </StrictMode>,
